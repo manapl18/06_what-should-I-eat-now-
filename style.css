@@ -1,0 +1,110 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:1000px;
+    background: url(../imgs/food.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    width: 500px;
+    transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(-100%);
+    left: 60px;
+}
+#logo.expanded{
+    transform: translate(0%);
+    left:0px;
+}
+.logo-inner{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+#blob {
+    top: 0;
+    z-index: -1;
+    right: 60px;
+    transform: translateX(100%);
+    height: 100%;
+    position: absolute;
+}
+
+#blob-path {
+    height: 100%;
+    fill:  #fff;
+}
+
+.something {
+    right: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;  
+}
+
+.something .line {
+    width: 100%;
+    height: 4px;
+    background-color: #190707;
+    position: absolute;
+}
+
+.something .line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.something .line:nth-child(3) {
+    bottom: 0;
+}
+
+h1 {
+    position: fixed;
+    right: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    top: 10px;
+}
+
+ul li {
+    font-size:2rem;
+    color: #190707;
+    font-family: sans-serif;
+    padding: 50px 0;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#190707;
+}
+.title{
+    position: relative;
+    float:right;
+    right:60%;
+    top:100px;
+}
+
+.text-box{
+    position: relative;
+    float: right;
+    right: 100px;
+    top : 300px;
+    padding: 20px 20px;
+    width: 30%;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 8px;
+    font-size:2rem;
+    line-height: 3rem;
+}
